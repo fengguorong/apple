@@ -1,0 +1,150 @@
+*{
+    margin: 0;padding: 0;list-style: none;box-sizing: border-box;
+}
+
+.head{
+    width:100%;
+    height:40px;
+    margin: auto;
+    background: #444;
+}
+.box{
+    width:100%;
+    height: 640px;
+    margin: auto;
+    background: red;
+    position: relative;
+}
+.banner{
+    height: 640px;
+    background: #000;
+    margin: auto;
+    position: relative;
+}
+.imgbox{
+    width:100%;
+    height:100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.imgbox h1{
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    background: none;
+}
+.left{
+    width:20%;
+    height:100%;
+    float: left;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:99;
+}
+.leftbtn{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #061011;
+    color: #B5B5B5;
+    font-size: 25px;
+    text-align: center;
+    line-height: 68px;
+    font-weight: bold;
+    cursor: pointer;
+    left: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.left:hover >.leftbtn{
+    opacity: .5;
+}
+.right{
+    width:20%;
+    height:100%;
+    float: right;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index:99;
+}
+.rightbtn{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #061011;
+    color: #B5B5B5;
+    font-size: 25px;
+    text-align: center;
+    line-height: 68px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.right:hover >.rightbtn{
+    opacity:.5;
+}
+.con{
+    height: 8px;
+    width: 210px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: none;
+    z-index:99;
+}
+.active{
+    width: 65px;
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+    background: #808080;
+    border-radius: 4px;
+}
+.progress{
+    width:0%;
+    height:100%;
+    background: #1A1A1A;
+    border-radius: 3px;
+}
+.body{
+    width:100%;
+    height: 200px;
+    border: 1px solid #fff;
+    margin: auto;
+}
+div[class*="col"]{
+    width: 325px;
+    height: 200px;
+    float: left;
+    border: 1px solid #fff;
+}
+.small{
+    display: none;
+}
+.big{
+    display: block;
+}

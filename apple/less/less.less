@@ -1,0 +1,521 @@
+@import "var.less";
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  &{
+    width:@num1*1-@minwidth;
+  }
+  &>.row{
+    width: 100%;
+    .clear;
+  }
+  &-fluid{
+    width:@num1*1-@minwidth;
+    margin: auto;
+  }
+  &-fluid>.row {
+    width: 100%;.clear;
+  }
+}
+header{
+  width:100%;
+  height:44px;
+  margin:auto;
+  background: #000;
+}
+.one{
+  background: url("../img/nike_watch_small.jpg");
+}
+.two{
+  background: url("../img/airpods_small.jpg");
+}
+.three{
+  background: url("../img/iphone_upgrade_small.jpg");
+}
+.four{
+  background: url("../img/accessibility_small.jpg");
+}
+.five{
+  width:325px;
+  height: 200px;
+  float: left;
+}
+.img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.img1{
+  background: url("../img/event_small.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img2{
+  background: url("../img/iphone_large.jpg") no-repeat;
+  background-color: #000;
+  background-size: contain;
+  background-position: center bottom;
+  left:100%;
+}
+.img3{
+  background:#fff url("../img/macbookpro_small.jpg") no-repeat;
+  background-size: auto;
+  background-position: center bottom;
+  left:100%;
+}
+.daohang{
+  width:100%;
+  height:44px;
+  margin:auto;
+  padding: 0 6%;
+  background: #333333;
+}
+.daohang li{
+  height:100%;
+  float: left;
+  padding: 0 3%;
+}
+.daohang li a{
+  display: none;
+}
+.daohang li:first-child{
+  display: block;
+  background-image: url("../img/2016-11-09_154320.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.daohang li:nth-last-child(2){
+  display: block;
+  background-image: url("../img/svg+xml.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.daohang li:last-child{
+  display: block;
+  float: right;
+  background-repeat: no-repeat;
+  background-image: url("../img/svg+xml2.svg");
+}
+.line{
+  height: 47px;
+  margin: auto;
+  color: #9E9999;
+  font-size: 10px;
+  line-height: 47px;
+  text-align: left;
+  padding-left: 5%;
+}
+.line a{
+  color: #3C80CC;
+  font-size: 10px;
+  text-decoration: none;
+}
+.line a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+.foot{
+  width:100%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+}
+.footer{
+  width:70%;
+  height: 350px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+.footer li{
+  width:100%;
+  height: 14.333%;
+  float: left;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  border-bottom: 1px solid #ccc;
+}
+.footer li a{
+  float: left;
+  line-height: 20px;
+  display: block;
+  width:100%;
+  height: 20px;
+  text-align: left;
+  color: #848484;
+  text-decoration: none;
+  display: none;
+}
+.footer li a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+.footer li h6{
+  color: #000;
+}
+.low{
+  width: 100%;
+  height: 70px;
+  margin: auto;
+}
+.low span{
+  color: #99999E;
+  font-size: 12px;
+  font-family: "微软雅黑";
+  text-align: left;
+  line-height: 12px;
+  float: left;
+  padding: 1% 15%;
+}
+.low a{
+  display: block;
+  height:12px;
+  float:left;
+  color: #6A7B8D;
+  line-height: 12px;
+  text-decoration: none;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+  padding:0 5px;
+  margin-top: 1%;
+}
+.low a:hover{
+  text-decoration: underline;
+  color: #000;
+}
+.loop();
+.col-s-hide{
+  display: none;
+}
+
+
+//中屏
+@media screen and (min-width:@num1){
+  .container{
+    width: 100%;
+  }
+  .loop(m);
+  .col-s-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: none;
+  }
+  .one{
+    background: url("../img/nike_watch_medium.jpg");
+  }
+  .two{
+    background: url("../img/airpods_medium.jpg");
+  }
+  .three{
+    background: url("../img/iphone_upgrade_medium.jpg");
+  }
+  .four{
+    background: url("../img/accessibility_medium.jpg");
+  }
+  .img1{
+    background: url("../img/event_medium.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img2{
+    background: url("../img/iphone_large.jpg") no-repeat;
+    background-color: #000;
+    background-size: contain;
+    background-position: center;
+  }
+  .img3{
+    background:#fff url("../img/macbookpro_medium.jpg") no-repeat;
+    background-size: auto;
+    background-position: center bottom;
+  }
+  .daohang{
+    width:100%;
+    height:44px;
+    margin:auto;
+    padding: 0 8%;
+    background: #000;
+  }
+  .daohang li{
+    height:100%;
+    float: left;
+    padding: 0 3%;
+  }
+  .daohang li a{
+    color: #fff;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    font-family: "微软雅黑";
+    display: block;
+    height:100%;
+  }
+  .daohang li:first-child{
+    background-image: url("../img/svg+xml.svg");
+    background-repeat: no-repeat;
+  }
+  .daohang li:nth-child(2){
+    display: none;
+  }
+  .daohang li:nth-last-child(2){
+    background-image: url("../img/svg+xml1.svg");
+    background-repeat: no-repeat;
+  }
+  .daohang li:last-child{
+    background-repeat: no-repeat;
+    background-image: url("../img/svg+xml2.svg");
+  }
+  .line{
+    height: 47px;
+    margin:  auto;
+    color: #9E9999;
+    font-size: 12px;
+    line-height: 47px;
+    text-align: left;
+    padding-left: 15%;
+  }
+  .line a{
+    color: #3C80CC;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .line a:hover{
+    color: #000;
+    text-decoration: underline;
+  }
+  .foot{
+    width:100%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 0px;
+  }
+  .footer{
+    width:70%;
+    height: 240px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  .footer li{
+    width:20%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    font-family: "微软雅黑";
+  }
+  .footer li a{
+    float: left;
+    line-height: 20px;
+    display: block;
+    width:100%;
+    height: 20px;
+    text-align: left;
+    color: #848484;
+    text-decoration: none;
+  }
+  .footer li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  .footer li h6{
+    color: #000;
+  }
+  .low{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+  }
+  .low span{
+    color: #99999E;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    text-align: left;
+    line-height: 12px;
+    float: left;
+    padding: 1% 15%;
+  }
+  .low a{
+    display: block;
+    height:12px;
+    float:left;
+    color: #6A7B8D;
+    line-height: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    border-right: 1px solid #ccc;
+    padding:0 5px;
+    margin-top: 1%;
+  }
+  .low a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+}
+
+//大屏
+@media screen and (min-width:@num2){
+  .container{
+    width: 100%;
+  }
+  .loop(l);
+  .col-s-hide{
+    display: block;
+  }
+  .col-m-hide{
+    display: block;
+  }
+  .col-l-hide{
+    display: none;
+  }
+  .one{
+    background: url("../img/nike_watch_large.jpg");
+  }
+  .two{
+    background: url("../img/airpods_large.jpg");
+  }
+  .three{
+    background: url("../img/iphone_upgrade_large.jpg");
+  }
+  .four{
+    background: url("../img/accessibility_large.jpg");
+  }
+  .img1{
+    background: url("../img/event_large.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .img2{
+    background: url("../img/iphone_large.jpg") no-repeat;
+    background-color: #000;
+    background-size: contain;
+    background-position: center;
+  }
+  .img3{
+    background:#fff url("../img/macbookpro_large.jpg") no-repeat;
+    background-size: contain ;
+    background-position: center bottom;
+  }
+  .daohang{
+    width:100%;
+    height:44px;
+    margin:auto;
+    padding: 0 10%;
+    background: #000;
+  }
+  .daohang li{
+    height:100%;
+    float: left;
+    padding: 0 4%;
+  }
+  .daohang li a{
+    color: #fff;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    font-family: "微软雅黑";
+    display: block;
+    height:100%;
+  }
+  .daohang li:first-child{
+    background-image: url("../img/svg+xml.svg");
+    background-repeat: no-repeat;
+  }
+  .daohang li:nth-child(2){
+    display: none;
+  }
+  .daohang li:nth-last-child(2){
+    background-image: url("../img/svg+xml1.svg");
+    background-repeat: no-repeat;
+  }
+  .daohang li:last-child{
+    background-repeat: no-repeat;
+    background-image: url("../img/svg+xml2.svg");
+  }
+  .footer li{
+    width:20%;
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    font-family: "微软雅黑";
+  }
+  .footer li a{
+    float: left;
+    line-height: 20px;
+    display: block;
+    width:100%;
+    height: 20px;
+    text-align: left;
+    color: #848484;
+    text-decoration: none;
+  }
+  .footer li a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+  .footer li h6{
+    color: #000;
+  }
+  .low{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+  }
+  .low span{
+    color: #99999E;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    text-align: left;
+    line-height: 12px;
+    float: left;
+    padding: 1% 15%;
+  }
+  .low a{
+    display: block;
+    height:12px;
+    float:left;
+    color: #6A7B8D;
+    line-height: 12px;
+    text-decoration: none;
+    font-size: 12px;
+    border-right: 1px solid #ccc;
+    padding:0 5px;
+    margin-top: 1%;
+  }
+  .low a:hover{
+    text-decoration: underline;
+    color: #000;
+  }
+}
+.loop(@type:s,@i:1) when(@i<=@cols){
+  .container>.row>.col-@{type}-@{i}{
+    float: left;
+    width: @i/@cols*100%;
+  }
+  .container-fluid>.row>.col-@{type}-@{i}{
+    float: left;
+    width: @i/@cols*100%;
+  }
+  .loop(@type,@i+1)
+}
+.clear(){
+  &:before,&:after{
+    content: "";
+    display: block;
+  }
+  &:after{
+    clear: both;
+  }
+}
