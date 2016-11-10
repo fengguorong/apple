@@ -8,26 +8,7 @@
     margin: auto;
     background: #444;
 }
-.box{
-    width:100%;
-    height: 640px;
-    margin: auto;
-    background: red;
-    position: relative;
-}
-.banner{
-    height: 640px;
-    background: #000;
-    margin: auto;
-    position: relative;
-}
-.imgbox{
-    width:100%;
-    height:100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-}
+
 .imgbox h1{
     text-align: center;
     line-height: 50px;
@@ -67,7 +48,7 @@
     line-height: 68px;
     font-weight: bold;
     cursor: pointer;
-    left: 10px;
+    left: 5%;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -98,7 +79,7 @@
     line-height: 68px;
     font-weight: bold;
     cursor: pointer;
-    right: 10px;
+    right: 5%;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -136,15 +117,9 @@
     border: 1px solid #fff;
     margin: auto;
 }
-div[class*="col"]{
-    width: 325px;
-    height: 200px;
-    float: left;
-    border: 1px solid #fff;
-}
-.small{
-    display: none;
-}
-.big{
-    display: block;
-}
+/*div[class*="col"]{*/
+    /*width: 325px;*/
+    /*height: 200px;*/
+    /*float: left;*/
+    /*border: 1px solid #fff;*/
+/*}*/

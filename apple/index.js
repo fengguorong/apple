@@ -1,10 +1,16 @@
 $(function () {
 // 导航菜单
-    $(".daohang li:first-child").click(function(){
-
+    var cw=$(window).width;
+    var ch=$(window).height;
+    $(".son").css({width:cw,height:ch});
+    $(".menu").click(function(){
+        $(".son").slideToggle(200);
     })
-
-
+//底部
+    $(".smallfoot>.list").click(function () {
+        $(".smallfoot>.list").next(".word").finish();
+        $(this).next(".word").slideToggle(200);
+    })
 // 轮播图
     var nextc=0;
     var nowc=0;

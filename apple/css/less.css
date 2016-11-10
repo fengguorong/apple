@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 735px;
+  width: 100%;
 }
 .container > .row {
   width: 100%;
@@ -59,6 +59,21 @@ header {
   height: 200px;
   float: left;
 }
+.banner {
+  width: 100%;
+  height: 640px;
+  background: #000;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.imgbox {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
 .img {
   display: block;
   width: 100%;
@@ -86,50 +101,80 @@ header {
   left: 100%;
 }
 .daohang {
-  width: 100%;
-  height: 44px;
-  margin: auto;
-  padding: 0 6%;
-  background: #333333;
-}
-.daohang li {
-  height: 100%;
-  float: left;
-  padding: 0 3%;
-}
-.daohang li a {
   display: none;
 }
-.daohang li:first-child {
+.small {
   display: block;
-  background-image: url("../img/2016-11-09_154320.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;
+  height: 44px;
+  background: #333;
 }
-.daohang li:nth-last-child(2) {
-  display: block;
-  background-image: url("../img/svg+xml.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.small .option {
+  width: 33.333%;
+  height: 44px;
+  float: left;
+  padding: 0 5%;
 }
-.daohang li:last-child {
+.small .option a {
   display: block;
-  float: right;
-  background-repeat: no-repeat;
-  background-image: url("../img/svg+xml2.svg");
+  float: left;
+  width: 44px;
+  height: 44px;
+}
+.caidan {
+  width: 100%;
+  position: relative;
+}
+.son {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  padding-left: 50px;
+  z-index: 999;
+  position: absolute;
+  top: 84px;
+  left: 0;
+}
+.menu .son a {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #666;
+  float: left;
+  color: #fff;
+  text-align: left;
+  line-height: 34px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+}
+.menu .son input {
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-bottom: 1px solid #666;
+  float: left;
+  color: #fff;
+  text-align: left;
+  line-height: 44px;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  background: #000;
 }
 .line {
+  width: 100%;
   height: 47px;
-  margin: auto;
   color: #9E9999;
-  font-size: 10px;
-  line-height: 47px;
+  font-size: 8px;
+  line-height: 17px;
   text-align: left;
-  padding-left: 5%;
+  padding: 2% 5%;
 }
 .line a {
   color: #3C80CC;
-  font-size: 10px;
+  font-size: 8px;
   text-decoration: none;
 }
 .line a:hover {
@@ -143,51 +188,74 @@ header {
   margin-top: 20px;
 }
 .footer {
-  width: 70%;
-  height: 350px;
+  display: none;
+}
+.smallfoot {
+  display: block;
+  width: 100%;
+  height: 480px;
   margin: 0 auto;
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
-.footer li {
-  width: 100%;
-  height: 14.333%;
+.smallfoot .list {
+  width: 90%;
+  height: 40px;
   float: left;
-  font-size: 12px;
-  font-family: "微软雅黑";
+  margin: auto;
   border-bottom: 1px solid #ccc;
+  padding: 0 3%;
+  margin: 2% 3%;
 }
-.footer li a {
+.smallfoot .list span {
   float: left;
-  line-height: 20px;
+  line-height: 40px;
   display: block;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  color: #666;
+}
+.smallfoot .list span:hover {
+  font-weight: bold;
+  color: #666;
+}
+.word {
+  width: 100%;
+  display: none;
+  margin: auto;
+}
+.word li {
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+.word li a {
   width: 100%;
   height: 20px;
   text-align: left;
-  color: #848484;
-  text-decoration: none;
-  display: none;
+  float: left;
+  line-height: 20px;
+  color: #ccc;
+  font-size: 10px;
+  padding: 0 6%;
 }
-.footer li a:hover {
+.word li a:hover {
+  color: #666;
   text-decoration: underline;
-  color: #000;
-}
-.footer li h6 {
-  color: #000;
 }
 .low {
   width: 100%;
-  height: 70px;
+  height: 120px;
   margin: auto;
 }
-.low span {
+.low p {
   color: #99999E;
   font-size: 12px;
   font-family: "微软雅黑";
   text-align: left;
   line-height: 12px;
-  float: left;
-  padding: 1% 15%;
+  padding: 3% 22%;
 }
 .low a {
   display: block;
@@ -196,10 +264,10 @@ header {
   color: #6A7B8D;
   line-height: 12px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   border-right: 1px solid #ccc;
-  padding: 0 5px;
-  margin-top: 1%;
+  padding: 0 3%;
+  margin-bottom: 1%;
 }
 .low a:hover {
   text-decoration: underline;
@@ -425,6 +493,20 @@ header {
   .four {
     background: url("../img/accessibility_medium.jpg");
   }
+  .banner {
+    width: 100%;
+    height: 640px;
+    background: #000;
+    margin: auto;
+    position: relative;
+  }
+  .imgbox {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
   .img1 {
     background: url("../img/event_medium.jpg") no-repeat;
     background-size: cover;
@@ -441,17 +523,21 @@ header {
     background-size: auto;
     background-position: center bottom;
   }
+  .small {
+    display: none;
+  }
   .daohang {
+    display: block;
     width: 100%;
     height: 44px;
     margin: auto;
-    padding: 0 8%;
+    padding: 0 12%;
     background: #000;
   }
   .daohang li {
     height: 100%;
     float: left;
-    padding: 0 3%;
+    padding: 0 4%;
   }
   .daohang li a {
     color: #fff;
@@ -480,15 +566,16 @@ header {
   .line {
     height: 47px;
     margin: auto;
+    float: left;
     color: #9E9999;
     font-size: 12px;
     line-height: 47px;
     text-align: left;
-    padding-left: 15%;
+    padding: 3% 5%;
   }
   .line a {
     color: #3C80CC;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: none;
   }
   .line a:hover {
@@ -497,22 +584,27 @@ header {
   }
   .foot {
     width: 100%;
+    height: 400px;
     overflow: hidden;
     margin: auto;
     margin-top: 0px;
   }
+  .smallfoot {
+    display: none;
+  }
   .footer {
-    width: 70%;
-    height: 240px;
+    display: block;
+    width: 90%;
     margin: 0 auto;
     border-top: 1px solid #ccc;
-    padding-top: 20px;
+    padding: 3% 0;
+    margin-top: 10%;
   }
   .footer li {
     width: 20%;
-    height: 100%;
+    height: 80%;
     float: left;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "微软雅黑";
   }
   .footer li a {
@@ -534,17 +626,16 @@ header {
   }
   .low {
     width: 100%;
-    height: 70px;
     margin: auto;
   }
-  .low span {
+  .low p {
     color: #99999E;
     font-size: 12px;
     font-family: "微软雅黑";
     text-align: left;
-    line-height: 12px;
+    line-height: 10px;
     float: left;
-    padding: 1% 15%;
+    padding: 1% 5%;
   }
   .low a {
     display: block;
@@ -684,6 +775,20 @@ header {
   .four {
     background: url("../img/accessibility_large.jpg");
   }
+  .banner {
+    width: 100%;
+    height: 640px;
+    background: #000;
+    margin: auto;
+    position: relative;
+  }
+  .imgbox {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
   .img1 {
     background: url("../img/event_large.jpg") no-repeat;
     background-size: cover;
@@ -700,7 +805,11 @@ header {
     background-size: contain ;
     background-position: center bottom;
   }
+  .small {
+    display: none;
+  }
   .daohang {
+    display: block;
     width: 100%;
     height: 44px;
     margin: auto;
@@ -736,12 +845,41 @@ header {
     background-repeat: no-repeat;
     background-image: url("../img/svg+xml2.svg");
   }
+  .line {
+    height: 47px;
+    margin: auto;
+    float: left;
+    color: #9E9999;
+    font-size: 12px;
+    line-height: 47px;
+    text-align: left;
+    padding-left: 15%;
+  }
+  .line a {
+    color: #3C80CC;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .line a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+  .footer {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
   .footer li {
     width: 20%;
     height: 100%;
     float: left;
     font-size: 12px;
     font-family: "微软雅黑";
+    padding: 0 2%;
+  }
+  .smallfoot {
+    display: none;
   }
   .footer li a {
     float: left;
@@ -765,7 +903,7 @@ header {
     height: 70px;
     margin: auto;
   }
-  .low span {
+  .low p {
     color: #99999E;
     font-size: 12px;
     font-family: "微软雅黑";
