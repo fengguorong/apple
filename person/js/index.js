@@ -58,19 +58,18 @@ $(function(){
 
 // 楼层跳转
     var nav=$(".nav>li");
-    var floor=$(".floor")
+    var floor=$(".floor");
 
     // 判断浏览器，下面代码兼容谷歌
     document.documentElement.scrollTop=1;
     var obj=document.documentElement.scrollTop?document.documentElement:document.body;
-    var now=0;//定义一个变量，指当前楼层
     //添加点击事件
         for (var i = 0; i < nav.length; i++) {
             nav[i].name=i;
             nav[i].onclick=function(){
                 
             // obj.scrollTop=floor[this.name].offsetTop
-            obj.animate({scrollTop:floor[this.name].offsetTop})
+            animate(obj,{scrollTop:floor[this.name].offsetTop})
                 
             }
         
